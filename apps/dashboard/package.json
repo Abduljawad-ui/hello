@@ -1,0 +1,20 @@
+{
+  "name": "dashboard-app",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "@municipality/api": "workspace:*",
+    "@municipality/types": "workspace:*",
+    "@municipality/ui": "workspace:*"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "latest",
+    "vite": "latest",
+    "electron": "latest"
+  }
+}
