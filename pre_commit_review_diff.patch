@@ -1,0 +1,57 @@
+--- a/tsconfig.json
++++ b/tsconfig.json
+@@ -0,0 +1,28 @@
++{
++  "compilerOptions": {
++    "target": "ESNext",
++    "useDefineForClassFields": true,
++    "lib": ["DOM", "DOM.Iterable", "ESNext"],
++    "allowJs": false,
++    "skipLibCheck": true,
++    "esModuleInterop": true,
++    "allowSyntheticDefaultImports": true,
++    "strict": true,
++    "forceConsistentCasingInFileNames": true,
++    "module": "ESNext",
++    "moduleResolution": "Bundler",
++    "resolveJsonModule": true,
++    "isolatedModules": true,
++    "noEmit": true,
++    "jsx": "react-jsx",
++    "baseUrl": ".",
++    "paths": {
++      "@municipality/api": ["packages/api/index.ts"],
++      "@municipality/types": ["packages/types/index.ts"],
++      "@municipality/ui": ["packages/ui/index.tsx"]
++    }
++  },
++  "exclude": ["node_modules"]
++}
+--- a/packages/api/package.json
++++ b/packages/api/package.json
+@@ -4,6 +4,7 @@
+   "version": "0.0.1",
+   "main": "./index.ts",
++  "types": "./index.ts",
+   "dependencies": {
+     "@supabase/supabase-js": "latest"
+   }
+--- a/packages/types/package.json
++++ b/packages/types/package.json
+@@ -2,5 +2,6 @@
+   "name": "@municipality/types",
+   "version": "0.0.1",
+-  "main": "./index.ts"
++  "main": "./index.ts",
++  "types": "./index.ts"
+ }
+--- a/packages/ui/package.json
++++ b/packages/ui/package.json
+@@ -4,6 +4,7 @@
+   "version": "0.0.1",
+   "main": "./index.tsx",
++  "types": "./index.tsx",
+   "dependencies": {
+     "react": "^18.3.1",
+     "react-dom": "^18.3.1"
+   }
