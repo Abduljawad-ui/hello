@@ -2,6 +2,7 @@
   "name": "@municipality/ui",
   "version": "0.0.1",
   "main": "./index.tsx",
+  "types": "./index.tsx",
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
